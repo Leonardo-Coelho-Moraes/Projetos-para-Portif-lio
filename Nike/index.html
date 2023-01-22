@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Shoes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sofia+Sans:wght@400;900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon"  href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js"></script>
+</head>
+<body>
+<div class="activeprop">
+  <header class="header">
+      <nav class="container">
+          <a class="logo" href="#">
+            <svg width="60" height="38" viewBox="0 0 60 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.68555 1.15626C3.7793 5.74611 0 11.2832 0 15.6777C0 18.2266 2.13867 21.8008 7.35352 21.8008C10.1758 21.8008 12.9883 20.6582 15.1758 19.7891C18.877 18.3047 59.7461 0.560563 59.7461 0.560563C60.1465 0.355485 60.0684 0.111342 59.5703 0.238297C59.375 0.287125 15.0781 12.2891 15.0781 12.2891C14.2285 12.5332 13.3496 12.6602 12.5 12.6602C8.67188 12.6602 6.09375 10.8242 6.09375 6.81056C6.09375 5.24806 6.58203 3.37306 7.68555 1.15626Z" />
+              </svg>
+              <h1>SHOES</h1>
+          </a>
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <div class="conta1">
+              <h1 class="numbercont">0</h1>
+              <a href="pages/error.html"><img src="img/sacolabranca.svg" alt="Sacola de compras logo" width="40px" height="40px"></a>
+              <a href="pages/login.html"><img src="img/contabranca.svg" alt="Logo de conta"  width="40px" height="40px"></a>
+            </div>
+            <li><a href="#ofertas">Ofertas</a></li>
+            <li><a href="pages/error.html">Feminino</a></li>
+            <li><a href="pages/error.html">Masculino</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+          <div class="conta">
+            <h1 class="numbercont1">0</h1>
+            <a href="pages/error.html"><img src="img/sacola.svg" alt="Sacola de compras logo" width="40px" height="40px"></a>
+            <a href="pages/login.html"><img src="img/conta.svg" alt="Logo de conta"  width="40px" height="40px"></a>
+          </div>
+        </nav>
+  </header>
+  <main>
+    <article class="ofertas container" id="ofertas">
+      <div class="info-oferta">
+        <h1 id="titulo">TÊNIS NIKE <br><span>PEGASUS TURBO</span></h1>
+        <p>A espuma Nike ZoomX é ágil e leve, deixando
+          cada passo mais reativo. Com o formato de balancim,
+          a espuma oferece sustentação para as três fases da
+          passada de um corredor. Oferece flexibilidade ao
+          levantar o pé do chão, uma passada suave ao mover o
+          pé para frente e amortecimento no contato com o solo.</p>
+          <div class="cores-sapato">
+            <a href="#" class="cor cor1"  onclick="mudarT1()"></a>
+            <a href="#" class="cor cor2"  onclick="mudarT2()"></a>
+            <a href="#" class="cor cor3" onclick="mudarT3()"></a>
+            </div>
+          <a class="comprar">COMPRAR</a>
+      </div>
+      <div class="proximaprop">
+        <a href="#" class="prop1" id="prop1"></a>
+        <a href="#" class="prop1" id="prop2"></a>
+        <a href="#" class="prop1"></a>
+      </div>
+      <div class="tenispropaganda">
+  
+        <div class="fundofototenis">
+          <div class="faixa-nike">
+            <img src="img/nikebranco.svg" alt="" draggable="false">
+            <h2 draggable="false">Nike</h2>
+            <img src="img/nikebranco.svg" alt="" draggable="false">
+            <h2 draggable="false">Nike</h2>
+            <img src="img/nikebranco.svg" alt="" draggable="false">
+            <h2 draggable="false">Nike</h2>
+            <img src="img/nikebranco.svg" alt="" draggable="false">
+            <h2 draggable="false">Nike</h2>
+  
+          </div>
+          <h1 draggable="false">JUST DO IT</h1>
+          <div class="faixa-nike2" >
+            <img src="img/nikebranco.svg" alt="" draggable="false">
+            <h2 draggable="false">Nike</h2>
+            <img src="img/nikebranco.svg" alt="" draggable="false">
+            <h2 draggable="false">Nike</h2>
+            <img src="img/nikebranco.svg" alt="" draggable="false">
+            <h2 draggable="false">Nike</h2>
+            <img src="img/nikebranco.svg" alt="" draggable="false">
+            <h2 draggable="false">Nike</h2>
+          </div>
+          <div class="sombratenis"></div>
+        </div>
+        <picture>
+          <source media="(max-width: 860px)" srcset="img/niketurbom.png">
+          <img src="img/niketurbo.png" alt="TÊNIS NIKE PEGASUS TURBO - A espuma Nike ZoomX é ágil e leve, deixando
+        cada passo mais reativo. " class="tenisprop" id="niketurbo">
+        </picture>
+  
+      </div>
+    </article>
+    <article class="ofertas-mob ">
+      <div class="bofmob"></div>
+      <div class="quadrado1"></div>
+      <div class="quadrado2"></div>
+      <div class="coresofertamob">
+        <div class="corofertam1"></div>
+        <div class="corofertam2"></div>
+        <div class="corofertam3"></div>
+      </div>
+      <div class="container conteudofertamob">
+        <h3>QUANTIDADE LIMITADA</h3>
+        <h1>Oferta especial <br>
+          para você</h1>
+        <h2>Nike Pegasus Turbo</h2>
+        <p>A espuma Nike ZoomX é ágil e leve, <br>
+            deixando cada passo mais reativo. <br>
+            Com o formato de balancim, a espuma <br>
+            oferece sustentação para as três fases <br>
+            da passada de um corredor.</p>
+        <div class="btnspreço">
+          <a href="#" onclick="compra()">COMPRAR <img src="img/sacolabranca.svg" width="20" height="20"></a>
+          <a href="#">893 R$</a>
+        </div>
+        <div class="sombraniketm"></div>
+        <img src="img/niketurbom.png" alt="" class="nikeofertamob">
+  
+        <a href="#" class="sacolabtn" onclick="compra()"><img src="img/sacolabranca.svg" alt="sacola" width="30" height="30"></a>
+        <div class="ttlpreço">
+          <div><h2>893 R$</h2></div>
+          <div><h1>10%</h1></div>
+  
+        </div>
+        <div class="tll"><h2>Pegasus Turbo</h2></div>
+      </div>
+  
+    </article>
+</div>
+  <section class="produtos container">
+    <div class="produto" style="--cor-l:#FF5D00; --cor-l1:#EF7C3A;--cor:#FF5D00;">
+      <img src="img/nikebranco.svg" alt="" class="logonikeprop">
+      <h1>194$</h1>
+      <div class="imgbx">
+        <img src="img/sapato1.png" alt="">
+      </div>
+      <div class="infoproduto">
+        <h2>Air Max Plus</h2>
+        <div class="tamanho">
+          <h3>Tamanho : </h3>
+          <span >38</span>
+          <span >39</span>
+          <span >40</span>
+          <span >41</span>
+        </div>
+        <div class="coresproduto">
+          <h3>Cores : </h3>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <a  class="compraproduto" onclick="compra()">Comprar</a>
+      </div>
+    </div>
+    <div class="produto" style="--cor-l:#005E43; --cor-l1:#51A47E;--cor:#005E43;" >
+      <img src="img/nikebranco.svg" alt="" class="logonikeprop">
+      <h1>204$</h1>
+      <div class="imgbx">
+        <img src="img/sapato2.png" alt="">
+      </div>
+      <div class="infoproduto">
+        <h2>Air Max Excee</h2>
+        <div class="tamanho">
+          <h3>Tamanho : </h3>
+          <span >38</span>
+          <span >39</span>
+          <span >40</span>
+          <span >41</span>
+        </div>
+        <div class="coresproduto">
+          <h3>Cores : </h3>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <a  class="compraproduto" onclick="compra()">Comprar</a>
+      </div>
+    </div>
+    <div class="produto" style="--cor-l:#040404; --cor-l1:#303030;--cor:white;">
+      <img src="img/nikebranco.svg" alt="" class="logonikeprop">
+      <h1>123$</h1>
+      <div class="imgbx">
+        <img src="img/sapato3.png" alt="">
+      </div>
+      <div class="infoproduto">
+        <h2>Sportswear Air Max</h2>
+        <div class="tamanho">
+          <h3>Tamanho : </h3>
+          <span >38</span>
+          <span >39</span>
+          <span >40</span>
+          <span >41</span>
+        </div>
+        <div class="coresproduto">
+          <h3>Cores : </h3>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <a class="compraproduto" onclick="compra()">Comprar</a>
+      </div>
+    </div>
+    <div class="produto" style="--cor-l:#56A1B6; --cor-l1:#44C6C2;--cor:#56A1B6;">
+      <img src="img/nikebranco.svg" alt="" class="logonikeprop">
+      <h1>145$</h1>
+      <div class="imgbx">
+        <img src="img/sapato4.png" alt="">
+      </div>
+      <div class="infoproduto">
+        <h2>Air Zoom Pegasus</h2>
+        <div class="tamanho">
+          <h3>Tamanho : </h3>
+          <span>38</span>
+          <span>39</span>
+          <span>40</span>
+          <span>41</span>
+        </div>
+        <div class="coresproduto" onclick="compra()">
+          <h3>Cores : </h3>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <a  class="compraproduto" onclick="compra()">Comprar</a>
+      </div>
+    </div>
+    <div class="produto" style="--cor-l:#D52B35; --cor-l1:#EE1F2C;--cor:#D52B35;">
+      <img src="img/nikebranco.svg" alt="" class="logonikeprop">
+      <h1>98$</h1>
+      <div class="imgbx">
+        <img src="img/sapato5.png" alt="">
+      </div>
+      <div class="infoproduto">
+        <h2>Air Max Plus</h2>
+        <div class="tamanho">
+          <h3>Tamanho : </h3>
+          <span >38</span>
+          <span >39</span>
+          <span>40</span>
+          <span>41</span>
+        </div>
+        <div class="coresproduto">
+          <h3>Cores : </h3>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <a  class="compraproduto" onclick="compra()">Comprar</a>
+      </div>
+    </div>
+    <div class="produto" style="--cor-l:#964080; --cor-l1:#3D86A8;--cor:#964080;">
+      <img src="img/nikebranco.svg" alt="" class="logonikeprop">
+      <h1>145$</h1>
+      <div class="imgbx">
+        <img src="img/sapato6.png" alt="">
+      </div>
+      <div class="infoproduto">
+        <h2>Air Zoom Pegasus</h2>
+        <div class="tamanho">
+          <h3>Tamanho : </h3>
+          <span >38</span>
+          <span >39</span>
+          <span >40</span>
+          <span >41</span>
+        </div>
+        <div class="coresproduto">
+          <h3>Cores : </h3>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <a  class="compraproduto" onclick="compra()">Comprar</a>
+      </div>
+    </div>
+    <div class="produto" style="--cor-l:#040404; --cor-l1:#303030;--cor:white;">
+      <img src="img/nikebranco.svg" alt="" class="logonikeprop">
+      <h1>400$</h1>
+      <div class="imgbx">
+        <img src="img/sapato7.png" alt="">
+      </div>
+      <div class="infoproduto">
+        <h2>Air Max Plus</h2>
+        <div class="tamanho">
+          <h3>Tamanho : </h3>
+          <span>38</span>
+          <span>39</span>
+          <span>40</span>
+          <span>41</span>
+        </div>
+        <div class="coresproduto">
+          <h3>Cores : </h3>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <a  class="compraproduto" onclick="compra()">Comprar</a>
+      </div>
+    </div>
+    <div class="produto" style="--cor-l:#005E43; --cor-l1:#51A47E;--cor:#005E43;">
+      <img src="img/nikebranco.svg" alt="" class="logonikeprop">
+      <h1>153$</h1>
+      <div class="imgbx">
+        <img src="img/sapato8.png" alt="">
+      </div>
+      <div class="infoproduto">
+        <h2>Air Max Down</h2>
+        <div class="tamanho">
+          <h3>Tamanho : </h3>
+          <span>38</span>
+          <span>39</span>
+          <span>40</span>
+          <span>41</span>
+        </div>
+        <div class="coresproduto">
+          <h3>Cores : </h3>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <a  class="compraproduto" onclick="compra()">Comprar</a>
+      </div>
+    </div>
+    <div class="produto" style="--cor-l:#B5B5B5; --cor-l1:#262626;--cor:#B5B5B5;">
+      <img src="img/nikebranco.svg" alt="" class="logonikeprop">
+      <h1>126$</h1>
+      <div class="imgbx">
+        <img src="img/sapato9.png" alt="">
+      </div>
+      <div class="infoproduto">
+        <h2>Air Max TW</h2>
+        <div class="tamanho">
+          <h3>Tamanho : </h3>
+          <span>38</span>
+          <span>39</span>
+          <span>40</span>
+          <span>41</span>
+        </div>
+        <div class="coresproduto">
+          <h3>Cores : </h3>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <a class="compraproduto" onclick="compra()">Comprar</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer id="contato">
+  <div class="contato container">
+    <img src="img/nikebranco.svg" alt="logo nike" width="71px" height="25px">
+    <div class="contatos">
+        <a>
+          <img src="img/mapa.svg" alt="Google Maps">
+          <h2>Rua Paula Souza, 66 <br>
+            <span>Zona Central, SP</span></h2>
+        </a>
+      <a>
+          <img src="img/telefone.svg" alt="telefone">
+          <h3>+15 22 9999-9999</h3>
+      </a>
+      <a>
+          <img src="img/email.svg" alt="Email">
+          <h3>nikeshoes@gmail.com</h3>
+      </a>
+    </div>
+    <div class="quem">
+      <h2>Quem somos nós</h2>
+      <p>A mais de 2 anos a empresa surgiu da ideia de amigos com a proposta de vender e disponibilizar no espaço nacinal calçados de alto padrão com total licenciamento da marca.</p>
+      <div class="redes">
+        <a href="pages/error.html"><img src="img/instagram.svg" alt="instagram"></a>
+        <a href="pages/error.html"><img src="img/facebook.svg" alt="facebook"></a>
+        <a href="pages/error.html"><img src="img/twitter.svg" alt="twitter"></a>
+      </div>
+    </div>
+  </div>
+  <div class="cred">
+    <h1>Nike Shoes - 2023 © Todos os direitos reservados.</h1>
+  </div>
+</footer>
+<script src="mobile-navbar.js" ></script>
+</body>
+</html>

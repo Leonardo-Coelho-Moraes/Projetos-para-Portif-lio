@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800;900&family=Inter:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200&family=Reem+Kufi:wght@500&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/index.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body >
+<header class="her">
+    <nav class="container">
+        <a class="logo" href="#">
+            <h1>Backpacker</h1>
+        </a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="#section1">Sobre Nós</a></li>
+          <li><a href="#section2">Aventuras</a></li>
+          <li><a href="#section3">Contato</a></li>
+          <li><a href="#" target="_blank">Log In</a></li>
+        </ul>
+      </nav>
+</header>
+<main>
+    <section id="section1" >
+        <div class="parallax1">
+            <div class="fundo imagefix"></div>
+            <div class="explorador imagefix"></div>
+            <div id="conteudo1" class="anima-right2">
+              <h2>venha explorar a jornada</h2>
+              <h1>aventura</h1>
+              <p>A Backpacker oferece serviços de viagens,  <br>levamos você para viver aventuras em vários locais </p>
+              <a href="#"><button>saber mais</button></a>
+            </div>
+            <div class="rocha imagefix"></div>
+            <div class="grama imagefix"></div> 
+        </div>
+        <div class="nuvens">
+          <img src="nuvem.png" alt="nuvem" class="nuvem1">
+          <img src="nuvem.png" alt="nuvem" class="nuvem2">
+          <img src="nuvem.png" alt="nuvem" class="nuvem3">
+        </div>
+        <div class="fundo2">
+          <div id="conteudo1-2" class="anima-right2">
+            <h2>venha explorar a jornada</h2>
+            <h1>aventura</h1>
+            <p>A Backpacker oferece serviços de viagens,  <br>levamos você para viver aventuras em vários locais </p>
+            <a href="#"><button>saber mais</button></a>
+          </div>
+        </div>
+        <a href="#section2"class="setabaixo"><img src="Arrow.svg" alt=""></a>
+    </section>
+    <section class="section2" id="section2">
+      <div class="container">
+        <div id="conteudo2">
+          <h3 class="anima-left"> Conheça Incríveis <br>Lugares</h3>
+          <p class="anima-right">Bem-Vindo, quer saber <br> para onde ir tem que ir <br> para conseguir uma <br> aventura? <a href="#" target="_blank">Saiba mais <br> sobre os lugares <br> disponíveis!</a>
+        </div>
+        <div id="locais">
+          <div class="local" id="local1">
+            <h1>01</h1>
+            <h2>Deserto</h2>
+          </div>
+          <div class="local" id="local2">
+            <h1>02</h1>
+            <h2>Montanhas</h2>
+          </div>
+          <div class="local" id="local3">
+            <h1>03</h1>
+            <h2>Campos</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+</main>
+<script src="mobile-navbar.js"></script>
+<script>
+     //animações de entrada para texto
+window.sr = ScrollReveal({reset : true});
+sr.reveal('.anima-b', {origin: 'bottom', distance: '500px', duration: 1500, viewFactor: 3.0})
+sr.reveal('.anima-right', { origin: 'right', distance:'500px', duration: 1500, viewFactor: 3.0,})
+sr.reveal('.anima-right2', { origin: 'right', distance:'500px', duration: 1000,delay:1000, viewFactor: 3.0,})
+sr.reveal('.anima-left', { origin: 'left', distance:'500px', duration: 1500, viewFactor: 3.0,})
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.from("#dragon",{
+            scrollTrigger : {
+                scrub:true
+            },
+            y: 200,
+            
+        })
+      </script>
+</body>
+</html>
