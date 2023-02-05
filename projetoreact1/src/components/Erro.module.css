@@ -1,4 +1,4 @@
-.corpo{
+.corpo {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -9,16 +9,19 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.titulo{
-    
+
+.titulo {
+
     font: 600 normal 9em/1em Inter;
     color: var(--vermelho);
 }
-.sub{
+
+.sub {
     font: 400 normal 2em/40px Inter;
     margin-bottom: 20px;
 }
-.btnvoltar{
+
+.btnvoltar {
     align-self: center;
     padding: 10px 40px;
     border-radius: 40px;
@@ -26,7 +29,7 @@
     text-decoration: none;
     color: var(--branco);
     background-color: var(--vermelho);
-    
+
     width: max-content;
     height: max-content;
 }

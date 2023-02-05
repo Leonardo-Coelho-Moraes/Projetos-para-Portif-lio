@@ -1,12 +1,27 @@
-import style from './Noticias.module.css'
+import style from '../css/Noticias.module.css'
 import { Link } from 'react-router-dom';
+import noticias from '../data-noticias';
 export default function Noticia(){
-    return(
-        <Link to='/' className={style.noticia}>
-            <span className={style.legendanot}>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <span className={style.datanot}>Postado em 00/00/00</span>
-            </span>
-         </Link>
-    );
+return(  
+<>
+<Link to={`/noticias/${noticias[0].titulo}`} className={style.noticia}>
+<span className={style.legendanot}>
+    <p>{noticias[0].titulo}</p>
+    <span className={style.datanot}>{noticias[0].data}</span>
+</span>
+</Link>
+<Link to={`/noticias/${noticias[1].titulo}`} className={style.noticia}>
+<span className={style.legendanot}>
+    <p>{noticias[1].titulo}</p>
+    <span className={style.datanot}>{noticias[1].data}</span>
+</span>
+</Link>
+<Link to={`/noticias/${noticias[2].titulo}`} className={style.noticia}>
+<span className={style.legendanot}>
+    <p>{noticias[2].titulo}</p>
+    <span className={style.datanot}>{noticias[2].data}</span>
+</span>
+</Link>
+</>
+);
 }

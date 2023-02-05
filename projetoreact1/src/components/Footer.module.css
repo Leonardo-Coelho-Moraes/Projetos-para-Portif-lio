@@ -11,10 +11,12 @@ footer{
 }
 .infosite{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 20px;
     align-items: center;
-    
     flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .contatos{
@@ -22,8 +24,8 @@ footer{
     flex-direction: column;
     gap: 18px;
     align-items: flex-start;
-    margin-bottom: 74px;
-    margin-top: 74px;
+    margin-bottom: 54px;
+    margin-top: 54px;
 }
 .contatos>div{
     display: flex;
@@ -94,8 +96,15 @@ footer{
     justify-content: center;
     text-align: center;
     align-items: center;
+    padding: 0px 24px;
     
 }
 .credito h3{
     font: 500 normal 18px/22px Inter;
+}
+@media only screen and (max-width: 956px) {
+    .infosite{
+        justify-content: center;
+        gap:20px
+    }
 }

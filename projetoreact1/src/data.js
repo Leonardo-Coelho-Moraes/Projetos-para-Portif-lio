@@ -12,34 +12,42 @@ const products = [
   {
     name:'emfermagem',
     image: img1,
+    horario: 'Diurno'
 },
 {
     name:'desemvolvimento de sistemas',
     image: img2,
+    horario: 'Noturno',
 },
 {
     name:'recursos humanos',
     image: img3,
+    horario: 'Vespertino',
 },
 {
     name:'administração',
     image: img4,
+    horario: 'Noturno',
 },
 {
     name:'açúcar e álcool',
     image: img5,
+    horario: 'Vespertino',
 },
 {
     name:'agropecuária',
     image: img6,
+    horario: 'Vespertino',
 },
 {
     name:'zootecnia',
     image: img7,
+    horario: 'Vespertino',
 },
 {
     name:'agronegócio',
     image: img8,
+    horario: 'Vespertino',
 },
 
 ];

@@ -5,6 +5,7 @@ import Noticias from './pages/Noticias';
 import Vagas from './pages/Vagas';
 import Contato from './pages/Contato';
 import CursoSolo from './pages/CursoSolo';
+import NoticiaSolo from './pages/NoticiaSolo';
 import Erro from './components/Erro';
 import SharedLayout from './components/SharedLayout';
 
@@ -17,11 +18,12 @@ export default function App() {
     
       <Routes>
           <Route path="/" element={<SharedLayout/>}>
-              <Route index element={<Home/>} />
+              <Route index element= {<Home/>} />
               <Route path="noticias" element={<Noticias/>} />
+              <Route path="noticias/:noticiaTitulo" element={<NoticiaSolo/>} />
               <Route path="vagas" element={<Vagas/>} />
               <Route path="cursos" element={<Cursos/>} />
-              <Route path='cursos/:cursotId' element={<CursoSolo />} />
+              <Route path='cursos/:cursoName' element={<CursoSolo />} />
               <Route path="contato" element={<Contato/>} />
           </Route>
           <Route path='*' element={<Erro/>} />
