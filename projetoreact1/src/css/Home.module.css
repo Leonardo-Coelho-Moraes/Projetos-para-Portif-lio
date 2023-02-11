@@ -75,6 +75,7 @@ justify-content: center;
     color: var(--branco);
     text-transform: uppercase;
     font: 600 normal 48px/56px Mukta;
+    text-align: center;
 }
 .empregos{
     height: 100%;
@@ -84,19 +85,25 @@ justify-content: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}.empregos>div{
+    display: flex;
+
+    flex-direction: column;
+    gap: 16px;
+    cursor: pointer;
 }
 
-.empregos h3{
+.empregos>div h3{
     display: flex;
     font: 600 normal 24px/40px Mukta;
     flex-direction: column;
     gap: 16px;
     cursor: pointer;
 }
-.empregos h3>span{
+.empregos>div span{
     font: 400 normal 18px/23px Inter;
 }
-.empregos h3>a{
+.empregos>div a{
     color: var(--vermelho);
     font: 500 normal 18px/22px Inter;
 }

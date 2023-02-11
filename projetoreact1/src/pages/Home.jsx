@@ -1,23 +1,15 @@
 
 import styles from '../css/Home.module.css'
 import Noticias from '../components/NoticiasArt'
-import Cursos from './Cursos'
-import React from 'react'
-import { Link } from 'react-router-dom'
+import  React, {useState} from "react";
+import Cursos from './Cursos';
+import { Link } from 'react-router-dom';
+import vagas from '../data-vagas';
 export default function Home(){
-    function muda(){
-        const emprego = document.querySelector('#empregofoto')
-            emprego.style.background = '#B91C1C'
-     };
-     function muda2(){
-        const emprego = document.querySelector('#empregofoto')
-            emprego.style.background = '#481A8F'
-     };
-     function muda3(){
-        const emprego = document.querySelector('#empregofoto')
-            emprego.style.background = '#111827'
-     };
-    
+    const [vaga, setvagaimg] = useState(vagas[0].image);
+    const handleButtonMouseEnter = vaga => {
+        setvagaimg(vaga);
+      };
     return(
         <React.Fragment>
             <section className={styles.section1}>
@@ -42,19 +34,25 @@ export default function Home(){
             </section>
             <Cursos />
             <section className={styles.section3}>
-                <div className={styles.empregofoto} id='empregofoto'>
+                <div className={styles.empregofoto} id='empregofoto'style={{ backgroundColor: vaga }} >
                     <h1>Estágios e empregos</h1>
                 </div>
-                <div className={styles.empregos}>
-                    <h3 onMouseEnter={muda}>Lorem ipsum dolor sit amet <span>Publicado em 00/00/2000</span>
+                <div  className={styles.empregos}>
+                    <div onMouseEnter={() => handleButtonMouseEnter(vagas[0].image)} >
+                        <h3 >{vagas[0].titulo}</h3>
+                        <span>{vagas[0].data}</span>
                         <Link to='/'>Mais mais sobre a vaga</Link>
-                    </h3>
-                    <h3 onMouseEnter={muda2}>Lorem ipsum dolor sit amet <span>Publicado em 00/00/2000</span>
+                    </div>
+                <div onMouseEnter={() => handleButtonMouseEnter(vagas[1].image)} >
+                    <h3 >{vagas[1].titulo}</h3>
+                    <span>{vagas[1].data}</span>
+                    <Link to='/'>Mais mais sobre a vaga</Link>
+                </div>
+                    <div onMouseEnter={() => handleButtonMouseEnter(vagas[2].image)}>
+                        <h3 >{vagas[2].titulo}</h3>
+                        <span>{vagas[2].data}</span>
                         <Link to='/'>Mais mais sobre a vaga</Link>
-                    </h3>
-                    <h3 onMouseEnter={muda3}>Lorem ipsum dolor sit amet <span>Publicado em 00/00/2000</span>
-                        <Link to='/'>Mais mais sobre a vaga</Link>
-                    </h3>
+                    </div>
                 </div>
             </section>
             <Noticias />
